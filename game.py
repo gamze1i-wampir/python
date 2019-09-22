@@ -17,8 +17,8 @@ while True:
         print("Daha Düşük Bir Sayı Girin.")
         continue
     else:
-        print("Tahmin edilen sayı:  {0}".format(tahminisayi))
-        print("yanlış tahmin sayınız: {0}".format(yanlış_tahmin))
+        print("Tahmin edilen sayı:".format(tahminisayi))
+        print("yanlış tahmin sayınız:".format(yanlış_tahmin))
         print("TEBRİKLER OYUNU KAZANDINIZ")
         print("YENİDEN BAŞLAYIN")
         
