@@ -1,44 +1,26 @@
-print("********** TURKHACKTEAM")
-print("\tTHT Gamze1i-wamp!r")
-print(" Sayı tahmin oyunu**********\n")
-
-tahminisayi = "56" 
-
+print("SAYI SAYMA OYUNUNA HOŞGELDİNİZ")
+print("------------------------------")
+print("harf yazmayın hata verir!!!!!!!")
+import random
+tahminisayi=random.randint(1, 99)
 yanlış_tahmin = 0
 while True: 
-    tahmini_sayi_giriş = input("tahmini sayıyı bul :")
-   
-
-    if (tahmini_sayi_giriş != tahminisayi ):
-        print("sayıyı yanlış tahmin etiniz ...")
-        yanlış_tahmin += 1
-        print("yanlış tahmin sayısı : ", yanlış_tahmin)
-    elif (tahmini_sayi_giriş == tahminisayi ):
-        print("tahmini doğru buldunuz")
-
-
+    yanlış_tahmin+=1
+    sayi=int(input("1 ile 99 arasında değer girin (404 yazarak Çıkış yap):"))
+    if(sayi==404):
+        print("Oyunu İptal Ettiniz")
         break
-        print("********** TURKHACKTEAM")
-print("\tTHT Gamze1i-wamp!r")
-print(" Sayı tahmin oyunu 2   **********\n")
-
-tahminisayi = "76" 
-
-yanlış_tahmin = 0
-while True: 
-    tahmini_sayi_giriş = input("tahmini sayıyı bul :")
-   
-
-    if (tahmini_sayi_giriş != tahminisayi ):
-        print("sayıyı yanlış tahmin etiniz ...")
-        yanlış_tahmin += 1
-        print("yanlış tahmin sayısı : ", yanlış_tahmin)
-    elif (tahmini_sayi_giriş == tahminisayi ):
-        print("tahmini doğru buldunuz")
-        print("TEBRİKLER BÜTÜN BÖLÜMLERİ BİTİRDİNİZ")
-        print("PYTHON SAYI TAHMİN OYUNU ")
-        print("YAPIMCI : Gamze1i-wamp!r THT  ")
-        print("oyun gelişme aşamasındadır..........")
+    elif sayi < tahminisayi:
+        print("Daha Yüksek Bir Sayı Girin....")
+        continue
+    elif sayi > tahminisayi:
+        print("Daha Düşük Bir Sayı Girin.")
+        continue
+    else:
+        print("Tahmin edilen sayı:  {0}".format(tahminisayi))
+        print("yanlış tahmin sayınız: {0}".format(yanlış_tahmin))
+        print("TEBRİKLER OYUNU KAZANDINIZ")
+        print("YENİDEN BAŞLAYIN")
         
 
 
