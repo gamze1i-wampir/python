@@ -6,10 +6,8 @@ class Exam():
 	def __init__(self,dogrusoru_sayisi, yanlissoru_sayisi):
 		self.dogrusoru_sayisi = dogrusoru_sayisi
 		self.yanlissoru_sayisi = yanlissoru_sayisi          
-		
 		toplam = self.dogrusoru_sayisi + self.yanlissoru_sayisi
 		puan = 100 / toplam 
-
 		self.score = self.dogrusoru_sayisi * puan
 
 
