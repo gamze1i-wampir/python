@@ -18,7 +18,7 @@ class Exam():
 
 
 class Student():
-	ogrenci_kadi = None
+	ogrenci_kadi = A
 	not_listesi = []
 	avg_score = 0
 	def __init__(self,ogrenci_kadi):
