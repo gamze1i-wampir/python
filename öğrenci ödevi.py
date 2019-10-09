@@ -18,11 +18,11 @@ class Exam():
 
 
 class Student():
-	ogrenci_adi = None
+	ogrenci_kadi = None
 	not_listesi = []
 	avg_score = 0
-	def __init__(self,ogrenci_adi):
-		self.ogrenci_adi = ogrenci_adi
+	def __init__(self,ogrenci_kadi):
+		self.ogrenci_kadi = ogrenci_kadi
 
 	def add_exam(self,sinav_notu):
 		self.sinav_notu = int(float(sinav_notu))
