@@ -15,8 +15,6 @@ class Exam():
 
 	def __float__(self):
 		return self.score
-
-
 class Student():
 	ogrenci_kadi = A
 	not_listesi = []
@@ -34,7 +32,6 @@ class Student():
 
 	def __float__(self):
 		return float(self.avg_score)
-
 class Class():
 	not_listesi = []
 	class_avg = 0
