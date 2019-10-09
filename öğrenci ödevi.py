@@ -24,11 +24,11 @@ class Student():
 	def __init__(self,ogrenci_kadi):
 		self.ogrenci_kadi = ogrenci_kadi
 
-	def add_exam(self,sinav_notu):
-		self.sinav_notu = int(float(sinav_notu))
-		self.not_listesi.append(self.sinav_notu)
+	def add_exam(self,sonuç_notu):
+		self.sonuç_notu = int(float(sonuç_notu))
+		self.not_listesi.append(self.sonuç_notu)
 		
-		self.avg_score += self.sinav_notu
+		self.avg_score += self.sonuç_notu
 		adet = len(self.not_listesi)
 		self.avg_score = self.avg_score / adet
 
